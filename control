@@ -1,0 +1,10 @@
+Package: com.kurdios.gosettings
+Version: 0.1
+Section: Kurd Scripts
+Maintainer: Karwan BK <karwanbk@yahoo.com>
+Depends: firmware (>= 11.0), preferenceloader, org.coolstar.tweakinject, mobilesubstrate
+Architecture: iphoneos-arm
+Name: GoSettings
+Author: Karwan BK <karwanbk@yahoo.com>
+Sponsor: KurdiOS Team <repo.kurdios.com>
+Description: KurdiOS

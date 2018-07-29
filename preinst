@@ -1,0 +1,31 @@
+#!/bin/sh
+echo "************************"
+echo -n "Please Wait ..."
+sleep 1
+
+mv /Library/TweakInject /Library/TweakInject.bak
+ln -s /Library/MobileSubstrate/DynamicLibraries /Library/TweakInject
+echo " done !"
+sleep 1
+
+
+declare -a cydia
+cydia=($CYDIA)
+
+if [[ $1 == install || $1 == upgrade ]]; then
+        if [[ ${CYDIA+@} ]]; then
+        eval "echo 'finish:restart' >&${cydia[0]}"
+    else
+    	echo "Please respring your device."
+    fi
+fi
+
+echo "************************"
+echo "************************"
+sleep 1
+echo -n "-By ::"
+sleep 1
+echo " Karwan BK (Karwanbk@yahoo.com)"
+echo "************************"
+
+ 
